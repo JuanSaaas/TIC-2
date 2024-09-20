@@ -1,0 +1,18 @@
+def cuadrado(tamaño):
+  for i in range(tamaño):
+      print('* ' * tamaño)
+
+def menu():
+  
+  print("Elige una figura geométrica:")
+  print("1. Cuadrado")
+
+
+  opcion = int(input("Ingresa el número de la figura: "))
+
+  if opcion == 1:
+      tamaño = int(input("Ingresa el tamaño del cuadrado: "))
+      cuadrado(tamaño)
+
+if __name__ == "__main__":
+  menu()
