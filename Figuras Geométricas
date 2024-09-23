@@ -1,0 +1,36 @@
+#Dar valor a cada variable: 
+def cuadrado(tamaño):
+  for i in range(tamaño):
+      print('* ' * tamaño)
+
+def triangulo(tamaño):
+  for i in range(1, tamaño + 1):
+      print('* ' * i)
+
+def triangulo_invertido(tamaño):
+  for i in range(tamaño, 0, -1):
+      print('* ' * i)
+
+
+def menu():
+  
+  print("Elige una figura geométrica:")
+  print("1. Cuadrado")
+  print("2. Triangulo")
+  print("3. Triangulo Invertido")
+
+
+  opcion = int(input("Ingresa el número de la figura: "))
+
+  if opcion == 1:
+      tamaño = int(input("Ingresa el tamaño del cuadrado: "))
+      cuadrado(tamaño)
+  if opcion == 2:
+    tamaño = int(input("Ingresa el tamaño del triángulo: "))
+    triangulo(tamaño) 
+  if opcion == 3:
+    tamaño = int(input("Ingresa el tamaño del triángulo invertido: "))
+    triangulo_invertido(tamaño)
+
+if __name__ == "__main__":
+  menu()
