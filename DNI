@@ -1,0 +1,17 @@
+# solicitar información del usuario
+nombre = raw_input("Ingresa tu nombre: ")
+primer_apellido = raw_input("Ingresa tu primer apellido: ")
+segundo_apellido = raw_input("Ingresa tu segundo apellido: ")
+fecha_nacimiento = raw_input("Ingresa tu fecha de nacimiento (DD/MM/AAAA): ")
+
+# extraer tres primeras letras
+tres_letras_nombre = nombre[:3].upper()
+tres_letras_primer_apellido = primer_apellido[:3].upper()
+tres_letras_segundo_apellido = segundo_apellido[:3].upper()
+dos_ultimos_fecha = fecha_nacimiento[-2:]
+
+# concatenar resultados
+resultado = tres_letras_nombre + tres_letras_primer_apellido + tres_letras_segundo_apellido + dos_ultimos_fecha
+
+# resultado
+print("Resultado final: {}".format(resultado))
