@@ -1,0 +1,6 @@
+def mayusculizador():
+    frase=raw_input("digame algo papito: ")
+    nueva_frase=frase.strip()
+    print(nueva_frase)
+
+mayusculizador()
