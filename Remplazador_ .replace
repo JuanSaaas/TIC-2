@@ -1,0 +1,6 @@
+def remplazador():
+    frase=raw_input("digame su edad: ")
+    nueva_frase=frase.replace("años", "tacos")
+    print(nueva_frase)
+
+remplazador()
