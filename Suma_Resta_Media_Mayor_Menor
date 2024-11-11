@@ -1,0 +1,40 @@
+# SUMAR
+def suma(a, b , c ,d , e):
+    return a + b + c + d + e
+
+# RESTAR
+def resta(a, b , c ,d , e):
+    return a - b - c - d - e
+
+# HACER MEDIA
+def media(lista):
+    if len(lista) == 0:
+        return 0
+    return sum(lista) / len(lista)
+
+# ENCONTRAR MAYOR
+def mayor(lista):
+    if len(lista) == 0:
+        return None
+    return max(lista)
+
+#ENCONTRAR MENOR
+def menor(lista):
+    if len(lista) == 0:
+        return None
+    return min(lista)
+
+
+# delete NUMEROS
+a = 10
+b = 5
+c = 8
+d = 9
+e = 5
+lista_numeros = [3, 5, 7, 2, 8]
+
+print("Suma:", suma(a, b , c ,d , e))
+print("Resta:", resta(a, b , c ,d , e))
+print("Media:", media(lista_numeros))
+print("Mayor:", mayor(lista_numeros))
+print("Menor:", menor(lista_numeros))
